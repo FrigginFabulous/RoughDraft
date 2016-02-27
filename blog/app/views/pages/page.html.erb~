@@ -1,0 +1,4 @@
+<h1>This is the home page</h1>
+
+<h3>Go to our comments page</h3>
+<%= link_to 'index', new_post_path %>

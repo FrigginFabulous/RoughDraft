@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   resources :posts do
   	resources :comments, only: :create
   end
+  get "/pages/:home" => "pages#show"
+  get "/pages/:page" => "pages#help"
   
   get 'login' => 'user_session#new'
   post 'login' => 'user_session#create'
