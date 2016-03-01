@@ -4,6 +4,12 @@ Rails.application.routes.draw do
   end
   get "/pages/:home" => "pages#show"
   get "/pages/:page" => "pages#help"
+  get "/pages/:locations" => "pages#locations"
+  get "/pages/:services" => "pages#services"
+  get "/pages/:about" => "pages#about"
+  get "/pages/:appointment" => "pages#appointment"
+  get "/pages/:contactus" => "pages#contactus"
+  get "/pages/:form" => "pages#form"
   
   get 'login' => 'user_session#new'
   post 'login' => 'user_session#create'
